@@ -1,0 +1,36 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model file {
+  id   String @id @default(cuid())
+  name String
+
+  tags  String[]
+  notes String[]
+
+  // Meta data
+  fileSize                  Int
+  filePath                  String
+  fileExtension             String
+  fileCreatedAt             DateTime
+  fileUpdatedAt             DateTime
+  mediaType                 String
+  mediaTypeSpecificMetaData Json?
+
+  miscellaneous Json?
+
+  content String?
+
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+  deletedAt DateTime?
+}
