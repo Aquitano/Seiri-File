@@ -5,21 +5,20 @@
     "type": "module",
     "scripts": {
         "build": "tsc && vite build",
-        "postbuild": "node dist/main.js",
         "start": "node dist/main.js",
         "postinstall": "prisma generate"
     },
     "devDependencies": {
         "@types/fs-extra": "^11.0.1",
         "@types/inquirer": "^9.0.3",
-        "@types/jsdom": "^20.0.1",
-        "@types/node": "18.11.18",
-        "prisma": "4.9.0",
+        "@types/jsdom": "^21.1.0",
+        "@types/node": "18.13.0",
+        "prisma": "4.10.1",
         "typescript": "^4.9.5",
         "vite": "^4.1.1"
     },
     "dependencies": {
-        "@prisma/client": "4.9.0",
+        "@prisma/client": "4.10.1",
         "cli-alerts": "^1.2.2",
         "cli-handle-error": "^4.4.0",
         "cli-handle-unhandled": "^1.1.1",
