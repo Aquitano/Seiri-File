@@ -1,1 +1,1 @@
-node --no-warnings .\script\cli.js 
+node --no-warnings .\script\cli.js
