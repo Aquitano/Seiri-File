@@ -3,7 +3,7 @@ import alert from 'cli-alerts';
 import { mkdirs } from 'fs-extra';
 import inquirer from 'inquirer';
 import config from '../config.json' assert { type: 'json' };
-import { folderStructure } from './structure';
+import { folderStructure } from './structure.js';
 
 export async function askList() {
     const answers = await inquirer.prompt({
