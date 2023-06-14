@@ -35,8 +35,8 @@ dependencies:
     specifier: ^3.3.0
     version: 3.3.0
   puppeteer:
-    specifier: ^20.6.0
-    version: 20.6.0(typescript@5.1.3)
+    specifier: ^20.7.1
+    version: 20.7.1(typescript@5.1.3)
 
 devDependencies:
   '@types/fs-extra':
@@ -1695,8 +1695,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /puppeteer-core@20.6.0(typescript@5.1.3):
-    resolution: {integrity: sha512-vUE6VnqvOHX1ABssTxtzTJUzEJrTL49DmXflSvlRIcolzOISVni1niI5/oWsDxzyRVE9sfwe8QqFbsWozs5RPA==}
+  /puppeteer-core@20.7.1(typescript@5.1.3):
+    resolution: {integrity: sha512-f45j9JxImFaYndQYsFA39CEDKwpn1nAF/Iw7urznatjhaslSB/RfHG7sC7iPpDbmP+CLpPEkHhqNxqpaUDdTLw==}
     engines: {node: '>=16.3.0'}
     peerDependencies:
       typescript: '>= 4.7.4'
@@ -1718,14 +1718,14 @@ packages:
       - utf-8-validate
     dev: false
 
-  /puppeteer@20.6.0(typescript@5.1.3):
-    resolution: {integrity: sha512-D/kkEIpDFRqpLOcCoNNdXI+IUcoD1FmdlWteT4FFPOhNLC46urmItMfQDKSwk2NJoO38ncgCQe5XEQ3QHD+piA==}
+  /puppeteer@20.7.1(typescript@5.1.3):
+    resolution: {integrity: sha512-yIkba2PT6rkPw85gCAmbW6KO6VVFTdONnvQp8taeMZaOTUJ193nVajykD1jT3vFbjvwKz8te9nbBVb9ITQqbPA==}
     engines: {node: '>=16.3.0'}
     requiresBuild: true
     dependencies:
       '@puppeteer/browsers': 1.4.1(typescript@5.1.3)
       cosmiconfig: 8.2.0
-      puppeteer-core: 20.6.0(typescript@5.1.3)
+      puppeteer-core: 20.7.1(typescript@5.1.3)
     transitivePeerDependencies:
       - bufferutil
       - encoding
