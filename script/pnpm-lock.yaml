@@ -53,8 +53,8 @@ devDependencies:
     specifier: ^21.1.0
     version: 21.1.0
   '@types/node':
-    specifier: 20.3.1
-    version: 20.3.1
+    specifier: 20.4.0
+    version: 20.4.0
   prisma:
     specifier: 4.16.1
     version: 4.16.1
@@ -63,7 +63,7 @@ devDependencies:
     version: 5.1.6
   vite:
     specifier: ^4.1.1
-    version: 4.1.1(@types/node@20.3.1)
+    version: 4.1.1(@types/node@20.4.0)
 
 packages:
 
@@ -346,7 +346,7 @@ packages:
     resolution: {integrity: sha512-MxObHvNl4A69ofaTRU8DFqvgzzv8s9yRtaPPm5gud9HDNvpB3GPQFvNuTWAI59B9huVGV5jXYJwbCsmBsOGYWA==}
     dependencies:
       '@types/jsonfile': 6.1.1
-      '@types/node': 20.3.1
+      '@types/node': 20.4.0
     dev: true
 
   /@types/inquirer@9.0.3:
@@ -359,7 +359,7 @@ packages:
   /@types/jsdom@21.1.0:
     resolution: {integrity: sha512-leWreJOdnuIxq9Y70tBVm/bvTuh31DSlF/r4l7Cfi4uhVQqLHD0Q4v301GMisEMwwbMgF7ZKxuZ+Jbd4NcdmRw==}
     dependencies:
-      '@types/node': 20.3.1
+      '@types/node': 20.4.0
       '@types/tough-cookie': 4.0.2
       parse5: 7.1.2
     dev: true
@@ -367,15 +367,15 @@ packages:
   /@types/jsonfile@6.1.1:
     resolution: {integrity: sha512-GSgiRCVeapDN+3pqA35IkQwasaCh/0YFH5dEF6S88iDvEn901DjOeH3/QPY+XYP1DFzDZPvIvfeEgk+7br5png==}
     dependencies:
-      '@types/node': 20.3.1
+      '@types/node': 20.4.0
     dev: true
 
   /@types/minimist@1.2.2:
     resolution: {integrity: sha512-jhuKLIRrhvCPLqwPcx6INqmKeiA5EWrsCOPhrlFSrbrmU4ZMPjj5Ul/oLCMDO98XRUIwVm78xICz4EPCektzeQ==}
     dev: false
 
-  /@types/node@20.3.1:
-    resolution: {integrity: sha512-EhcH/wvidPy1WeML3TtYFGR83UzjxeWRen9V402T8aUGYsCHOmfoisV3ZSg03gAFIbLq8TnWOJ0f4cALtnSEUg==}
+  /@types/node@20.4.0:
+    resolution: {integrity: sha512-jfT7iTf/4kOQ9S7CHV9BIyRaQqHu67mOjsIQBC3BKZvzvUB6zLxEwJ6sBE3ozcvP8kF6Uk5PXN0Q+c0dfhGX0g==}
 
   /@types/normalize-package-data@2.4.1:
     resolution: {integrity: sha512-Gj7cI7z+98M282Tqmp2K5EIsoouUEzbBJhQQzDE3jSIRk6r9gsz0oUokqIUR4u1R3dMHo0pDHM7sNOHyhulypw==}
@@ -384,7 +384,7 @@ packages:
   /@types/through@0.0.30:
     resolution: {integrity: sha512-FvnCJljyxhPM3gkRgWmxmDZyAQSiBQQWLI0A0VFL0K7W1oRUrPJSqNO0NvTnLkBcotdlp3lKvaT0JrnyRDkzOg==}
     dependencies:
-      '@types/node': 20.3.1
+      '@types/node': 20.4.0
     dev: true
 
   /@types/tough-cookie@4.0.2:
@@ -395,7 +395,7 @@ packages:
     resolution: {integrity: sha512-Cn6WYCm0tXv8p6k+A8PvbDG763EDpBoTzHdA+Q/MF6H3sapGjCm9NzoaJncJS9tUKSuCoDs9XHxYYsQDgxR6kw==}
     requiresBuild: true
     dependencies:
-      '@types/node': 20.3.1
+      '@types/node': 20.4.0
     dev: false
     optional: true
 
@@ -2110,7 +2110,7 @@ packages:
       spdx-expression-parse: 3.0.1
     dev: false
 
-  /vite@4.1.1(@types/node@20.3.1):
+  /vite@4.1.1(@types/node@20.4.0):
     resolution: {integrity: sha512-LM9WWea8vsxhr782r9ntg+bhSFS06FJgCvvB0+8hf8UWtvaiDagKYWXndjfX6kGl74keHJUcpzrQliDXZlF5yg==}
     engines: {node: ^14.18.0 || >=16.0.0}
     hasBin: true
@@ -2135,7 +2135,7 @@ packages:
       terser:
         optional: true
     dependencies:
-      '@types/node': 20.3.1
+      '@types/node': 20.4.0
       esbuild: 0.16.17
       postcss: 8.4.21
       resolve: 1.22.1
