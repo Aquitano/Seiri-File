@@ -39,8 +39,8 @@ dependencies:
     specifier: ^3.3.1
     version: 3.3.1
   puppeteer:
-    specifier: ^20.7.4
-    version: 20.7.4(typescript@5.1.6)
+    specifier: ^20.8.1
+    version: 20.8.1(typescript@5.1.6)
 
 devDependencies:
   '@types/fs-extra':
@@ -315,8 +315,8 @@ packages:
     resolution: {integrity: sha512-gpZG0kGGxfemgvK/LghHdBIz+crHkZjzszja94xp4oytpsXrgt/Ice82MvPsWMleVIniKuARrowtsIsim0PFJQ==}
     requiresBuild: true
 
-  /@puppeteer/browsers@1.4.3(typescript@5.1.6):
-    resolution: {integrity: sha512-8Jfkpb8qhPQhMsNBmIY8b6+ic2kvcmHZlyvifmcNKBC5jNZf3MAKq3gryKfmrjFAYFl3naPjiKljPUq5wuolfQ==}
+  /@puppeteer/browsers@1.4.4(typescript@5.1.6):
+    resolution: {integrity: sha512-1eRHnLFMJTcIdeAIKFCWjAkUmjZtDlgTzTtK0KC8h+Sw3aJ1B3V7IMFu1S5YL8EmO/U4Vte4ukEpOUPnkqL3jw==}
     engines: {node: '>=16.3.0'}
     hasBin: true
     peerDependencies:
@@ -329,7 +329,7 @@ packages:
       extract-zip: 2.0.1
       progress: 2.0.3
       proxy-agent: 6.2.1
-      tar-fs: 3.0.3
+      tar-fs: 3.0.4
       typescript: 5.1.6
       unbzip2-stream: 1.4.3
       yargs: 17.7.1
@@ -690,10 +690,10 @@ packages:
       path-type: 4.0.0
     dev: false
 
-  /cross-fetch@3.1.6:
-    resolution: {integrity: sha512-riRvo06crlE8HiqOwIpQhxwdOk4fOeR7FVM/wXoxchFEqMNUjvbs3bfo4OTgMEMHzppd4DxFBDbyySj8Cv781g==}
+  /cross-fetch@4.0.0:
+    resolution: {integrity: sha512-e4a5N8lVvuLgAWgnCrLr2PP0YyDOTHa9H/Rj54dirp61qXnNq46m82bRhNqIA5VccJtWBvPTFRV3TtvHUKPB1g==}
     dependencies:
-      node-fetch: 2.6.11
+      node-fetch: 2.6.12
     transitivePeerDependencies:
       - encoding
     dev: false
@@ -1416,8 +1416,8 @@ packages:
     engines: {node: '>=10.5.0'}
     dev: false
 
-  /node-fetch@2.6.11:
-    resolution: {integrity: sha512-4I6pdBY1EthSqDmJkiNk3JIT8cswwR9nfeW/cPdUagJYEQG7R95WRH74wpz7ma8Gh/9dI9FP+OU+0E4FvtA55w==}
+  /node-fetch@2.6.12:
+    resolution: {integrity: sha512-C/fGU2E8ToujUivIO0H+tpQ6HWo4eEmchoPIoXtxCrVghxdKq+QOHqEZW7tuP3KlV3bC8FRMO5nMCC7Zm1VP6g==}
     engines: {node: 4.x || >=6.0.0}
     peerDependencies:
       encoding: ^0.1.0
@@ -1658,8 +1658,8 @@ packages:
     engines: {node: '>=6'}
     dev: false
 
-  /puppeteer-core@20.7.4(typescript@5.1.6):
-    resolution: {integrity: sha512-7YZ1LmTo+5yM9uBNFTMJpE+lJjcIoNjKVarsYIk7o5WhgQNI9o5XgiQK5f71y1vWwr7sT/eGG75HXAehjnTBTg==}
+  /puppeteer-core@20.8.1(typescript@5.1.6):
+    resolution: {integrity: sha512-Qoh8f8Y90AVV003kENcwMZ6V2qTtsQ6S7PSwEwCILKvbeQCevbJl5KMzT3qOArgKsT3mZfR+sLHNy6+tWFsQcQ==}
     engines: {node: '>=16.3.0'}
     peerDependencies:
       typescript: '>= 4.7.4'
@@ -1667,9 +1667,9 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@puppeteer/browsers': 1.4.3(typescript@5.1.6)
+      '@puppeteer/browsers': 1.4.4(typescript@5.1.6)
       chromium-bidi: 0.4.16(devtools-protocol@0.0.1135028)
-      cross-fetch: 3.1.6
+      cross-fetch: 4.0.0
       debug: 4.3.4
       devtools-protocol: 0.0.1135028
       typescript: 5.1.6
@@ -1681,14 +1681,14 @@ packages:
       - utf-8-validate
     dev: false
 
-  /puppeteer@20.7.4(typescript@5.1.6):
-    resolution: {integrity: sha512-4JLZeRLXQAjQwWa6yv8cpjEgVapgrvDjBBcI/UCJ+EM6na6aR7hQFnQV4ffjFlUKPpvB2Y1vztVqOEhjfC+yUQ==}
+  /puppeteer@20.8.1(typescript@5.1.6):
+    resolution: {integrity: sha512-1ZntYZenpbKqNJW30UItrAskWuYp9i4GQ99y9uefLwewpybDYCuPXkn5nGRd+KkT08O7ge/WHNHmv8cH1zDQ1Q==}
     engines: {node: '>=16.3.0'}
     requiresBuild: true
     dependencies:
-      '@puppeteer/browsers': 1.4.3(typescript@5.1.6)
+      '@puppeteer/browsers': 1.4.4(typescript@5.1.6)
       cosmiconfig: 8.2.0
-      puppeteer-core: 20.7.4(typescript@5.1.6)
+      puppeteer-core: 20.8.1(typescript@5.1.6)
     transitivePeerDependencies:
       - bufferutil
       - encoding
@@ -1936,16 +1936,16 @@ packages:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
     dev: false
 
-  /tar-fs@3.0.3:
-    resolution: {integrity: sha512-ZK36riGYnFI6LujIBfBRoDfeaaWUkStIFKwtPjnDWCKnsDE9kuQthG09aQjLjpzoRtVElEMZ/AIAURNb7N9mkA==}
+  /tar-fs@3.0.4:
+    resolution: {integrity: sha512-5AFQU8b9qLfZCX9zp2duONhPmZv0hGYiBPJsyUdqMjzq/mqVpy/rEUSeHk1+YitmxugaptgBh5oDGU3VsAJq4w==}
     dependencies:
       mkdirp-classic: 0.5.3
       pump: 3.0.0
-      tar-stream: 3.1.4
+      tar-stream: 3.1.6
     dev: false
 
-  /tar-stream@3.1.4:
-    resolution: {integrity: sha512-IlHr7ZOW6XaVBCrSCokUJG4IqUuRcWW76B8XbrtCotbaDh6zVGE7WPCzaSz1CN+acFmWiwoa+cE4RZsom0RzXg==}
+  /tar-stream@3.1.6:
+    resolution: {integrity: sha512-B/UyjYwPpMBv+PaFSWAmtYjwdrlEaZQEhMIBFNC5oEG8lpiW8XjcSdmEaClj28ArfKScKHs2nshz3k2le6crsg==}
     dependencies:
       b4a: 1.6.4
       fast-fifo: 1.2.0
@@ -2098,6 +2098,7 @@ packages:
   /vm2@3.9.19:
     resolution: {integrity: sha512-J637XF0DHDMV57R6JyVsTak7nIL8gy5KH4r1HiwWLf/4GBbb5MKL5y7LpmF4A8E2nR6XmzpmMFQ7V7ppPTmUQg==}
     engines: {node: '>=6.0'}
+    deprecated: The library contains critical security issues and should not be used for production! The maintenance of the project has been discontinued. Consider migrating your code to isolated-vm.
     hasBin: true
     dependencies:
       acorn: 8.8.1
