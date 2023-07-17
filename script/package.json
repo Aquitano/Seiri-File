@@ -18,7 +18,7 @@
         "vite": "^4.4.4"
     },
     "dependencies": {
-        "@prisma/client": "4.16.0",
+        "@prisma/client": "4.16.1",
         "cli-alerts": "^1.2.2",
         "cli-handle-error": "^4.4.0",
         "cli-handle-unhandled": "^1.1.1",
