@@ -3,8 +3,8 @@ import { JSDOM } from 'jsdom';
 import fetch, { fileFromSync } from 'node-fetch';
 import path from 'node:path';
 import puppeteer, { Browser } from 'puppeteer';
-import config from '../config.json';
-import { fileCreateInput, getMediaType, getMetaData } from './fileTypes';
+import { fileCreateInput, getMediaType, getMetaData } from './fileTypes.js';
+import { config } from './utils/config.js';
 
 async function innerText(htmlCode: string, browser: Browser): Promise<string> {
     const page = await browser.newPage();
@@ -31,9 +31,12 @@ export async function getAllNewFiles(
 
     const browser = await puppeteer.launch();
 
+    const rootFolderLocation = config.get('rootFolderLocation') as string;
+
     await Promise.all(
         files.map(async (file) => {
             const filePath = path.join(dir, file.name);
+            if (filePath.startsWith('.') || filePath === 'Script') return;
 
             if (file.isDirectory()) {
                 // Recurse into directory
@@ -75,7 +78,7 @@ export async function getAllNewFiles(
                 const fileInfo: fileCreateInput = {
                     name: file.name.replace(path.extname(file.name), ''),
                     fileSize: stat.size,
-                    filePath: filePath.replace(config.rootFolderLocation, ''),
+                    filePath: filePath.replace(rootFolderLocation, ''),
                     fileExtension: path.extname(file.name),
                     fileCreatedAt: stat.birthtime,
                     fileUpdatedAt: stat.mtime,

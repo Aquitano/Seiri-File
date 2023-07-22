@@ -1,4 +1,4 @@
-export const folderStructure = [
+export const folderStructure: string[] = [
     '+Inbox',
     'Archive/Backup',
     'Archive/Social Media',

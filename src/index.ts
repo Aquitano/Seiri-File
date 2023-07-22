@@ -1,20 +1,20 @@
 import { PrismaClient } from '@prisma/client';
 import inquirer from 'inquirer';
-import config from '../config.json';
-import { getAllNewFiles } from './fileInteractions';
+import { getAllNewFiles } from './fileInteractions.js';
 import {
     canBeMultipleFileTypes,
     fileCreateInput,
     getMetaData,
-} from './fileTypes';
+} from './fileTypes.js';
+import { config } from './utils/config.js';
 
 const prisma = new PrismaClient();
 
 // A `main` function so that we can use async/await
 async function main() {
     const files = await getAllNewFiles(
-        config.rootFolderLocation,
-        parseInt(config.lastIndexTime) ||
+        config.get('rootFolderLocation') as string,
+        (config.get('lastTimeIn') as number) ||
             Date.parse('1970-01-01T00:00:00.000Z'),
     );
 
@@ -51,25 +51,11 @@ async function main() {
                 console.error(
                     `Error: Could not create file ${file.name} in database.`,
                 );
-                return;
             }
         }),
     );
 
-    const { readJSON, writeJSON } = await import('fs-extra');
-    readJSON('config.json', (err, data) => {
-        if (err) {
-            console.error(err);
-            return;
-        }
-        data.lastTimeIn = Date.now();
-        writeJSON('config.json', data, (err) => {
-            if (err) {
-                console.error(err);
-                return;
-            }
-        });
-    });
+    config.set('lastTimeIn', Date.now());
 }
 
 main()

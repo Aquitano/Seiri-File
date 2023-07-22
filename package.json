@@ -1,0 +1,45 @@
+{
+    "name": "sosharu",
+    "private": true,
+    "version": "0.1.0",
+    "type": "module",
+    "license": "GPL-3.0",
+    "author": "Thomas 'Aquitano' Breindl <thomasbreindl.me>",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Aquitano/Sosharu.git"
+    },
+    "scripts": {
+        "build": "node build.js",
+        "lint": "tsc --noEmit",
+        "start": "node dist/main.js",
+        "postinstall": "prisma generate"
+    },
+    "devDependencies": {
+        "@types/cli-welcome": "^2.2.0",
+        "@types/fs-extra": "^11.0.1",
+        "@types/inquirer": "^9.0.3",
+        "@types/jsdom": "^21.1.1",
+        "@types/node": "20.4.4",
+        "esbuild": "0.18.15",
+        "esbuild-node-externals": "^1.8.0",
+        "prisma": "5.0.0",
+        "typescript": "^5.1.6"
+    },
+    "dependencies": {
+        "@prisma/client": "5.0.0",
+        "cli-alerts": "^1.2.2",
+        "cli-handle-error": "^4.4.0",
+        "cli-handle-unhandled": "^1.1.1",
+        "cli-meow-help": "^3.1.0",
+        "cli-welcome": "^2.2.2",
+        "conf": "^11.0.2",
+        "fs-extra": "^11.1.1",
+        "inquirer": "^9.2.8",
+        "jsdom": "^22.1.0",
+        "meow": "^12.0.1",
+        "node-fetch": "^3.3.1",
+        "puppeteer": "^20.9.0",
+        "youtube-dl-exec": "^2.4.6"
+    }
+}

@@ -1,8 +1,8 @@
 import { exec } from 'child_process';
+// @ts-expect-error No types available
 import alert from 'cli-alerts';
 import { mkdirs } from 'fs-extra';
 import inquirer from 'inquirer';
-import config from '../config.json' assert { type: 'json' };
 import { folderStructure } from './structure.js';
 
 export async function askList() {
@@ -26,12 +26,14 @@ export async function initStructure() {
         msg: `Initializing folder structure...`,
     });
 
-    folderStructure.forEach((folder) => {
-        mkdirs(config.rootFolder + '/' + folder, (err) => {
+    folderStructure.forEach((folder: string) => {
+        mkdirs('../' + folder, (err) => {
             if (err) {
                 alert({
                     type: `error`,
-                    msg: `Folder structure could not be initialized!\n${err}`,
+                    msg: `Folder structure could not be initialized!\n${JSON.stringify(
+                        err,
+                    )}`,
                 });
             }
         });
