@@ -69,7 +69,7 @@ main()
     });
 
 async function createFile(file: fileCreateInput) {
-    return await prisma.file.create({
+    return await prisma.localFile.create({
         data: {
             name: file.name,
             fileSize: file.fileSize,
@@ -83,12 +83,13 @@ async function createFile(file: fileCreateInput) {
             ),
             miscellaneous: JSON.stringify(file.miscellaneous),
             content: file.content,
+            profileId: 'TEST',
         },
     });
 }
 
 async function isMovedFile(file: fileCreateInput) {
-    const res = await prisma.file.findMany({
+    const res = await prisma.localFile.findMany({
         where: {
             name: file.name,
             fileSize: file.fileSize,
@@ -111,7 +112,7 @@ async function isMovedFile(file: fileCreateInput) {
     });
 
     if (answers.isMoved) {
-        await prisma.file.update({
+        await prisma.localFile.update({
             where: {
                 id: res[0].id,
             },

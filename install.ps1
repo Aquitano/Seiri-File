@@ -51,7 +51,10 @@ else {
 
 #* Generate start script *#
 $script = @'
-node --no-warnings .\Sosharu\cli.js
+node --no-warnings .\Script\dist\cli.js
+
+# Wait for user input before closing the window
+Read-Host -Prompt "Press Enter to exit"
 '@
 
 # Write the script to a file

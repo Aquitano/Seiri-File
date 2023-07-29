@@ -1,5 +1,5 @@
 {
-    "name": "sosharu",
+    "name": "Seiri-File",
     "private": true,
     "version": "0.1.0",
     "type": "module",
@@ -7,7 +7,7 @@
     "author": "Thomas 'Aquitano' Breindl <thomasbreindl.me>",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/Aquitano/Sosharu.git"
+        "url": "git+https://github.com/Aquitano/Seiri-File.git"
     },
     "scripts": {
         "build": "node build.js",
@@ -20,8 +20,8 @@
         "@types/fs-extra": "^11.0.1",
         "@types/inquirer": "^9.0.3",
         "@types/jsdom": "^21.1.1",
-        "@types/node": "20.4.4",
-        "esbuild": "0.18.15",
+        "@types/node": "20.4.5",
+        "esbuild": "0.18.17",
         "esbuild-node-externals": "^1.8.0",
         "prisma": "5.0.0",
         "typescript": "^5.1.6"
@@ -35,11 +35,10 @@
         "cli-welcome": "^2.2.2",
         "conf": "^11.0.2",
         "fs-extra": "^11.1.1",
-        "inquirer": "^9.2.8",
+        "inquirer": "^9.2.9",
         "jsdom": "^22.1.0",
         "meow": "^12.0.1",
-        "node-fetch": "^3.3.1",
-        "puppeteer": "^20.9.0",
-        "youtube-dl-exec": "^2.4.6"
+        "node-fetch": "^3.3.2",
+        "puppeteer": "^20.9.0"
     }
 }
